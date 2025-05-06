@@ -3,7 +3,7 @@
   "displayName": "Click Language Support",
   "description": "Syntax highlighting and snippets for Click Modular Router language.",
   "version": "0.0.1",
-  "publisher": "your-name",
+  "publisher": "NabilJada",
   "engines": {
     "vscode": "^1.50.0"
   },
@@ -46,5 +46,9 @@
   },
   "devDependencies": {
     "vsce": "^2.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NabilJada/click-vscode-extension.git"
   }
 }
