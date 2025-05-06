@@ -1,0 +1,50 @@
+{
+  "name": "click-language-support",
+  "displayName": "Click Language Support",
+  "description": "Syntax highlighting and snippets for Click Modular Router language.",
+  "version": "0.0.1",
+  "publisher": "your-name",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "click",
+        "aliases": [
+          "Click"
+        ],
+        "extensions": [
+          ".click"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "click",
+        "scopeName": "source.click",
+        "path": "./syntaxes/click.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "click",
+        "path": "./snippets/click.json"
+      }
+    ]
+  },
+  "main": "extension.js",
+  "activationEvents": [
+    "onLanguage:click"
+  ],
+  "scripts": {
+    "build": "vsce package"
+  },
+  "devDependencies": {
+    "vsce": "^2.10.0"
+  }
+}

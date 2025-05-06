@@ -1,0 +1,21 @@
+{
+  "scopeName": "source.click",
+  "patterns": [
+    {
+      "match": "\\b(elementclass|input|output|=>|->)\\b",
+      "name": "keyword.control.click"
+    },
+    {
+      "match": "\\b[A-Za-z0-9_]+\\s*::\\s*[A-Za-z0-9_]+",
+      "name": "entity.name.function.click"
+    },
+    {
+      "match": "\\[[0-9]+\\]",
+      "name": "constant.numeric.click"
+    },
+    {
+      "match": "->|=>|;",
+      "name": "punctuation.separator.click"
+    }
+  ]
+}
